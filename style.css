@@ -124,8 +124,7 @@ h1 {
 }
 
 .container-table table {
-  margin: 0 auto;
-  width: 70%;
+  width: 100%;
   border-collapse: collapse;
 }
 
