@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Cor de fundo mais suave */
+  color: #333; /* Cor de fonte escura */
+  text-align: center; /* Centraliza todo o conteúdo */
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff; /* Cor de fundo mais clara */
+  border: 1px solid #333;
+  border-radius: 10px;
+  text-align: left; /* Retorna o alinhamento do texto para a esquerda */
+}
+
+.info {
+  margin: 20px auto;
+  max-width: 500px; /* Define a largura máxima da seção de informações */
+  padding: 20px;
+  background-color: #ccc;
+  border: 1px solid #333;
+  border-radius: 8px;
+  display: flex; /* Exibir como flexbox */
+  flex-direction: column; /* Direção de coluna para alinhar verticalmente */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza horizontalmente o conteúdo dentro da div */
+}
+
+.info p {
+  margin-bottom: 10px;
+}
+
+.info input[type="checkbox"] {
+  align-self: flex-start; /* Coloca os botões de checkbox no início do contêiner flex */
+}
+
+.info input[type="date"] {
+  width: 40%; /* Define a largura dos inputs de data */
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.info textarea {
+  width: 40%; /* Define a largura dos inputs de observação */
+  height: 100px; /* Define a altura do textarea */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.info button {
+  font-size: 15px;
+  margin-top: 10px;
+  width: 50%;
+  padding: 15px;
+  background-color: #1E90FF;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.info button:hover {
+  background-color: #0056b3;
+}
+
+h1 {
+  text-align: center;
+  color: #333; /* Cor de destaque para o título */
+  font-size: 30px;
+}
+
+#veiculo-km {margin: 20px auto;
+  max-width: 500px; /* Define a largura máxima da seção de informações */
+  gap: 10px;
+  padding: 5px;
+  background-color: #ccc;
+  border: 1px solid #333;
+  border-radius: 8px;
+  display: flex; /* Exibir como flexbox */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  text-align: center;
+}
+
+#veiculo-km input {
+  display: flex;
+  margin: 10px 0;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+
+#obs {
+  display: flex;
+  margin: 10px auto; /* Centraliza horizontalmente o textarea */
+  width: 100%; /* Define a largura do textarea */
+  height: 100px; /* Define a altura do textarea */
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.container-table {
+  background: #ccc;
+  margin: 20px auto;
+  max-width: 600px; /* Define a largura máxima da tabela */
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow-x: auto; /* Adiciona rolagem horizontal caso a tabela seja maior que a largura da tela */
+}
+
+.container-table h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container-table th, .container-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.container-table th {
+  background-color: #f2f2f2;
+}
+
+.container-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.container-table tr:hover {
+  background-color: #ddd;
+}
+

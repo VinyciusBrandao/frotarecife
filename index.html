@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Frota Operação Recife</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>📈 Controle de Frota RECIFE 🚘</h1>
+    <div id="veiculo-km">
+      <input id="veiculo" type="number" placeholder="Veiculo ">
+      <input id="km" type="number" placeholder="Quilometragem">
+    </div>
+    <div class="info">
+      <form id="formVeiculo">
+        <p>Nivel de Combustivel Estimado:</p>
+        <input type="checkbox" name="nivelCombustivel" value="2/8 ⛽">2/8 ⛽
+        <input type="checkbox" name="nivelCombustivel" value="4/8 ⛽">4/8 ⛽
+        <input type="checkbox" name="nivelCombustivel" value="6/8 ⛽">6/8 ⛽
+        <input type="checkbox" name="nivelCombustivel" value="8/8 ⛽">8/8 ⛽
+        <p>Data</p>
+        <input id='data' type="date">
+        <p>Observaçoes</p>
+        <textarea id="obs" rows="3" cols="50" placeholder="Observaçoes do Veiculo"></textarea>
+        <button id="submit" type="submit">Adicionar Veiculo</button>
+      </form>
+    </div>
+  </div>
+</body>
+<div class="container-table">
+  <h2>Veículos Adicionados</h2>
+  <table id="tabelaVeiculos">
+    <tr>
+      <th>Veículo</th>
+      <th>Quilometragem</th>
+      <th>Combustível</th>
+      <th>Data</th>
+      <th>Observações</th>
+    </tr>
+  </table>
+</div>
+<script src="script.js"></script>
+
+</html>
