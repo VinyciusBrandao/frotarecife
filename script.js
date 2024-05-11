@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var data = document.getElementById("data").value;
     var obs = document.getElementById("obs").value;
 
+    if (veiculo.trim() === '' || km.trim() === '' || nivelCombustivel.trim() === '') {
+      alert('Por favor, preencha todos os campos obrigatórios.');
+      return; // Sai da função se algum campo estiver vazio
+    }
+
     // Formatar a data no formato "dia/mês/ano"
     data = formatarData(data);
 
