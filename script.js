@@ -16,6 +16,20 @@ document.addEventListener("DOMContentLoaded", function() {
       return; 
     }
 
+    var checkboxes = document.querySelectorAll('input[name="nivelCombustivel"]');
+    checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+      // Desmarca os outros checkboxes quando um é marcado
+      if (this.checked) {
+        checkboxes.forEach(function(cb) {
+          if (cb !== checkbox) {
+            cb.checked = false;
+          }
+        });
+      }
+    });
+  });
+
     // Formatar a data no formato "dia/mês/ano"
     data = formatarData(data);
 
