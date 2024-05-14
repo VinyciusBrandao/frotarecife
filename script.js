@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function formatarData(data) {
   const dataObj = new Date(data);
   const dia = dataObj.getUTCDate().toString().padStart(2, '0');
-  const mes = (dataObj.getMonth() + 1).toString().padStart(2, '0'); // Adiciona +1 ao mês pois o mês começa em 0
+  const mes = (dataObj.getUTCMonth() + 1).toString().padStart(2, '0'); // Adiciona +1 ao mês pois o mês começa em 0
   const ano = dataObj.getFullYear();
 
   return `${dia}/${mes}/${ano}`;
