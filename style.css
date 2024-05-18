@@ -1,63 +1,66 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0; /* Cor de fundo mais suave */
-  color: #333; /* Cor de fonte escura */
-  text-align: center; /* Centraliza todo o conteúdo */
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
 }
 
 .container {
   max-width: 600px;
   margin: 0 auto;
   padding: 10px;
-  background-color: #fff; /* Cor de fundo mais clara */
+  background-color: #fff;
   border: 1px solid #333;
   border-radius: 10px;
-  text-align: left; /* Retorna o alinhamento do texto para a esquerda */
+  text-align: left;
 }
 
 .info {
   margin: 20px auto;
-  max-width: 500px; /* Define a largura máxima da seção de informações */
+  max-width: 500px;
   padding: 20px;
   background-color: #ccc;
   border: 1px solid #333;
   border-radius: 8px;
-  display: flex; /* Exibir como flexbox */
-  flex-direction: column; /* Direção de coluna para alinhar verticalmente */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
-  text-align: center; /* Centraliza horizontalmente o conteúdo dentro da div */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#combustivel select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
 .info p {
   margin-bottom: 10px;
 }
 
-.info input[type="checkbox"] {
-  align-self: flex-start; /* Coloca os botões de checkbox no início do contêiner flex */
-}
-
-.info input[type="date"] {
-  width: 40%; /* Define a largura dos inputs de data */
-  padding: 5px;
-  font-size: 14px;
+.info input[type="date"],
+.info textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
   border: 1px solid #333;
   border-radius: 4px;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
 .info textarea {
-  width: 40%; /* Define a largura dos inputs de observação */
-  height: 100px; /* Define a altura do textarea */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  height: 100px;
 }
 
 .info button {
-  font-size: 15px;
+  font-size: 16px;
   margin-top: 10px;
-  width: 50%;
+  width: 100%;
   padding: 15px;
   background-color: #1E90FF;
   color: #fff;
@@ -72,38 +75,36 @@ body {
 
 h1 {
   text-align: center;
-  color: #333; /* Cor de destaque para o título */
+  color: #333;
   font-size: 30px;
 }
 
-#veiculo-km {margin: 20px auto;
-  max-width: 500px; /* Define a largura máxima da seção de informações */
+#veiculo-km {
+  margin: 20px auto;
+  max-width: 500px;
   gap: 10px;
   padding: 5px;
   background-color: #ccc;
   border: 1px solid #333;
   border-radius: 8px;
-  display: flex; /* Exibir como flexbox */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #veiculo-km input {
-  display: flex;
-  margin: 10px 0;
-  width: 40%;
+  width: 100%;
   padding: 10px;
   border: 1px solid #333;
   border-radius: 5px;
+  margin: 5px;
 }
 
-
 #obs {
-  display: flex;
-  margin: 10px auto; /* Centraliza horizontalmente o textarea */
-  width: 100%; /* Define a largura do textarea */
-  height: 100px; /* Define a altura do textarea */
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  height: 100px;
   padding: 10px;
   border: 1px solid #333;
   border-radius: 5px;
@@ -112,10 +113,15 @@ h1 {
 .container-table {
   background: #ccc;
   margin: 20px auto;
-  max-width: 600px; /* Define a largura máxima da tabela */
+  max-width: 100%; /* Define a largura máxima da tabela */
   border: 1px solid #333;
   border-radius: 8px;
   overflow-x: auto; /* Adiciona rolagem horizontal caso a tabela seja maior que a largura da tela */
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto; /* Adiciona rolagem horizontal */
 }
 
 .container-table h2 {
@@ -126,12 +132,14 @@ h1 {
 .container-table table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: auto; /* Permite que a tabela se ajuste ao conteúdo */
 }
 
 .container-table th, .container-table td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+  word-wrap: break-word; /* Quebra a palavra para ajustar o conteúdo */
 }
 
 .container-table th {
@@ -145,4 +153,6 @@ h1 {
 .container-table tr:hover {
   background-color: #ddd;
 }
-
+.observacoes-coluna {
+  display: none;
+}
