@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -17,32 +17,44 @@
     </div>
     <div class="info">
       <form id="formVeiculo">
-        <p>Nivel de Combustivel Estimado:</p>
-        <input type="checkbox" name="nivelCombustivel" value="2/8 ⛽">2/8 ⛽
-        <input type="checkbox" name="nivelCombustivel" value="4/8 ⛽">4/8 ⛽
-        <input type="checkbox" name="nivelCombustivel" value="6/8 ⛽">6/8 ⛽
-        <input type="checkbox" name="nivelCombustivel" value="8/8 ⛽">8/8 ⛽
+        <p>Nível de Combustível Estimado:</p>
+        <div id="combustivel">
+          <select name="nivelCombustivel" id="nivelCombustivel">
+            <option value="1/8 ⛽">1/8 ⛽</option>
+            <option value="2/8 ⛽">2/8 ⛽</option>
+            <option value="3/8 ⛽">3/8 ⛽</option>
+            <option value="4/8 ⛽">4/8 ⛽</option>
+            <option value="5/8 ⛽">5/8 ⛽</option>
+            <option value="6/8 ⛽">6/8 ⛽</option>
+            <option value="7/8 ⛽">7/8 ⛽</option>
+            <option value="8/8 ⛽">8/8 ⛽</option>
+          </select>
+        </div>
         <p>Data</p>
         <input id='data' type="date">
-        <p>Observaçoes</p>
-        <textarea id="obs" rows="3" cols="50" placeholder="Observaçoes do Veiculo"></textarea>
-        <button id="submit" type="submit">Adicionar Veiculo</button>
+        <p>Observações</p>
+        <textarea id="obs" rows="3" cols="50" placeholder="Observações do Veículo"></textarea>
+        <button id="submit" type="submit">Adicionar Veículo</button>
       </form>
     </div>
   </div>
+
+  <div class="container-table">
+    <h2>Veículos Adicionados</h2>
+    <div class="table-responsive">
+      <table id="tabelaVeiculos">
+        <tr>
+          <th>Veículo</th>
+          <th>Km</th>
+          <th>Combustível</th>
+          <th>Data</th>
+          <th class="observacoes-coluna">Observações</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-<div class="container-table">
-  <h2>Veículos Adicionados</h2>
-  <table id="tabelaVeiculos">
-    <tr>
-      <th>Veículo</th>
-      <th>Quilometragem</th>
-      <th>Combustível</th>
-      <th>Data</th>
-      <th>Observações</th>
-    </tr>
-  </table>
-</div>
-<script src="script.js"></script>
 
 </html>
